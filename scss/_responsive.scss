@@ -1,0 +1,30 @@
+@media screen and (min-width:768px){
+  .main-container{
+    height: 100vh;
+    .floatingSvgTop{
+      width: 500px;
+      height: 500px;
+    }
+
+    .floatingSvgBottom{
+      background: url('../images/bg-bottom.svg')center no-repeat;
+      background-position: left bottom;
+      background-size: contain;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 300px;
+      width: 300px;
+    }
+  }
+  .sub-container{
+    .row{
+      
+      .cols:nth-child(even){
+        transform: scale(1.1);
+        position: relative;
+        z-index: 5;
+      }
+    }
+  }
+}

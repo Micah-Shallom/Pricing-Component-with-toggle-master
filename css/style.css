@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat',sans-serif;
+}
+
+.main-container {
+  background-color: #f6f6fe;
+  height: 100%;
+}
+
+.small-text {
+  color: #494c5f;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.title-text {
+  color: #494c5f;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.title-text span:first-of-type {
+  font-size: 35px;
+}
+
+.toggle-text {
+  color: #b3b5c6;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-container {
+  position: relative;
+}
+
+.main-container .header {
+  margin-bottom: 35px;
+}
+
+.main-container .switcher {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ccc;
+  height: 25px;
+  padding: 0 5px;
+  border-radius: 50px;
+  width: 60px;
+  margin-right: 5px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+}
+
+.main-container .switcher .toggler {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: white;
+}
+
+.main-container .change {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-container .floatingSvgTop {
+  background: url("../images/bg-top.svg") center no-repeat;
+  height: 300px;
+  background-size: contain;
+  background-position: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+}
+
+.main-container .sub-container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.main-container .sub-container .row .cols {
+  padding: 10px 0px;
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.main-container .sub-container .row .cols .component {
+  padding: 30px;
+  height: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.main-container .sub-container .row .cols .component .custombtn {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  color: white;
+  margin-top: 15px;
+  outline: 0;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.main-container .sub-container .row .cols .component .custombtn:hover {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  border: 1.5px solid #6d708d;
+}
+
+.main-container .sub-container .row .cols .component .title-text {
+  margin-bottom: 15px;
+}
+
+.main-container .sub-container .row .cols .component p {
+  padding: 10px 0;
+  font-weight: 600;
+  color: #6d708d;
+  border-bottom: 1.5px solid #6d708d;
+}
+
+.main-container .sub-container .row .cols:nth-child(even) .component {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+}
+
+.main-container .sub-container .row .cols:nth-child(even) .component > * {
+  color: white;
+}
+
+.main-container .sub-container .row .cols:nth-child(even) .component .custombtn {
+  background: white;
+}
+
+.main-container .sub-container .row .cols:nth-child(even) .component .custombtn span {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.main-container .sub-container .row .cols:nth-child(even) .component .custombtn:hover {
+  border: 1.5px solid #fff;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background-image: linear-gradient(#a3a8f0, #696fdd);
+}
+
+.main-container .sub-container .row .cols:nth-child(even) .component .custombtn:hover span {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media screen and (min-width: 768px) {
+  .main-container {
+    height: 100vh;
+  }
+  .main-container .floatingSvgTop {
+    width: 500px;
+    height: 500px;
+  }
+  .main-container .floatingSvgBottom {
+    background: url("../images/bg-bottom.svg") center no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 300px;
+    width: 300px;
+  }
+  .sub-container .row .cols:nth-child(even) {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    position: relative;
+    z-index: 5;
+  }
+}
